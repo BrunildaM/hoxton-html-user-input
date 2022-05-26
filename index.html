@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+</head>
+<body>
+
+   <form>
+    <header> <h1>Hey there!</h1></header>
+       <label for="name" >
+        What's your name?
+           <input type="text"  placeholder="Enter your name" required /></label>
+      
+           <label for="email">
+           What's your email addess?
+           <input id="email" type="email" placeholder="Enter your email address" required /></label>
+   
+<label for="service">What services are you looking for?           
+<select name="Choose your service" id="service" required >
+    <option>Choose your service</option>
+    <option>Programming for my company</option>
+    <option>Apply as a student</option>
+    <option>Apply as a Sponsor</option>
+</select> </label>
+
+    <label for="budget">What is your budget?
+    <select name="Select budget" id="budget" required>
+        <option>Select your budget</option>
+        <option>Less than 500$</option>
+        <option>500$ - 1000$</option>
+        <option>More than 1000$</option>
+    </select>
+</label>
+
+    <label for="Message">Anything else you'd like to tell us?
+    <textarea 
+    name="message" 
+    id="Message" 
+    rows="10" 
+    required
+    minlength="15">Your message here...</textarea></label>
+ <label for="tc">I agree with T&Cs.
+ <input type="checkbox" name="tc" id="tc" required> </label>
+
+ <button> Submit </button>
+
+  
+      
+</form>
+</body>
+</html>
